@@ -1,0 +1,195 @@
+# Preference setting overrides
+gui_create_pref_key -category {Globals} -key {load_detail_for_funcov} -value_type {bool} -value {false}
+gui_create_pref_category -category {schem_obj_name}
+gui_create_pref_key -category {schem_obj_name} -key {show_cell_and_pin_with_symbol_name} -value_type {bool} -value {false}
+gui_create_pref_key -category {schem_pin_hc} -key {textExtFont} -value_type {string} -value {Helvetica,10,-1,5,50,0,0,0,0,0}
+
+# State setting overrides
+gui_state_default_create -off -ini
+gui_set_state_value -category Layout -key child_console_size_x -value 1852
+gui_set_state_value -category Layout -key child_console_size_y -value 158
+gui_set_state_value -category Layout -key child_data_coltype -value 168
+gui_set_state_value -category Layout -key child_data_colvalue -value 171
+gui_set_state_value -category Layout -key child_data_colvariable -value 234
+gui_set_state_value -category Layout -key child_data_size_x -value 568
+gui_set_state_value -category Layout -key child_data_size_y -value 679
+gui_set_state_value -category Layout -key child_hier_col3 -value {-1}
+gui_set_state_value -category Layout -key child_hier_colhier -value 227
+gui_set_state_value -category Layout -key child_hier_colpd -value 0
+gui_set_state_value -category Layout -key child_hier_coltype -value 107
+gui_set_state_value -category Layout -key child_hier_size_x -value 336
+gui_set_state_value -category Layout -key child_hier_size_y -value 679
+gui_set_state_value -category Layout -key child_schematic_docknewline -value false
+gui_set_state_value -category Layout -key child_schematic_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_schematic_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_schematic_size_x -value 1520
+gui_set_state_value -category Layout -key child_schematic_size_y -value 674
+gui_set_state_value -category Layout -key child_source_docknewline -value false
+gui_set_state_value -category Layout -key child_source_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_source_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_source_size_x -value 1520
+gui_set_state_value -category Layout -key child_source_size_y -value 674
+gui_set_state_value -category Layout -key child_wave_colname -value 266
+gui_set_state_value -category Layout -key child_wave_colvalue -value 266
+gui_set_state_value -category Layout -key child_wave_left -value 537
+gui_set_state_value -category Layout -key child_wave_right -value 1310
+gui_set_state_value -category Layout -key main_pos_x -value 0
+gui_set_state_value -category Layout -key main_pos_y -value 28
+gui_set_state_value -category Layout -key main_size_x -value 1852
+gui_set_state_value -category Layout -key main_size_y -value 972
+gui_set_state_value -category Layout -key stand_wave_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_wave_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_wave_child_pos_y -value {-15}
+gui_set_state_value -category Layout -key stand_wave_child_size_x -value 1857
+gui_set_state_value -category Layout -key stand_wave_child_size_y -value 832
+gui_set_state_value -category Layout -key stand_wave_top_pos_x -value 0
+gui_set_state_value -category Layout -key stand_wave_top_pos_y -value 28
+gui_set_state_value -category Layout -key stand_wave_top_size_x -value 1852
+gui_set_state_value -category Layout -key stand_wave_top_size_y -value 972
+gui_create_state_key -category FindDialog -key m_pMatchCase -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
+gui_create_state_key -category FindDialog -key m_pWrapAround -value_type bool -value true
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_VPDCombo} -value_type string -value inter.vpd
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_argsCombo} -value_type string -value {{-ucligui }}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_curDirCombo} -value_type string -value {/home/titan/thkim/work/booth3_mult_signed_8x8/vcs_verification/work /home/titan/thkim/work/booth_mult_signed_4x4/work}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_exeCombo} -value_type string -value {./simv /home/titan/thkim/work/booth_mult_signed_4x4/work/simv}
+gui_state_default_create -off
+
+# Begin command logging
+gui_sim_run Ucli -exe ./simv -args {-ucligui  } -dir .
+gui_list_select -id Data.1 -selected  { {Booth3_algorithm_signed_tb.multiplier[7:0]}   }
+gui_list_select -id Data.1 -selected  { {Booth3_algorithm_signed_tb.x[7:0]}   }
+gui_list_select -id Data.1 -selected  { Booth3_algorithm_signed_tb.CLK   }
+gui_list_select -id Data.1 -selected  { Booth3_algorithm_signed_tb.RST   }
+gui_list_select -id Data.1 -selected  { {Booth3_algorithm_signed_tb.final_result[15:0]}   }
+gui_use_schematics 
+gui_path_show -objects Booth3_algorithm_signed_tb
+gui_zoom -window Schematic.1 -rect { {-8384 -4087} {18412 14114} }
+gui_zoom -window Schematic.1 -rect { {-464 -315} {465 316} }
+gui_zoom -window Schematic.1 -rect { {-464 -315} {465 316} }
+gui_list_select -id Data.1 -selected  {  }
+gui_list_select -id Hier.1 -current_item_name BUSKP_HVT -current_item_type Scope  -selected  { BUSKP_HVT   }
+gui_list_select -id Hier.1 -current_item_name Booth3_algorithm_signed_tb -current_item_type Scope  -selected  { Booth3_algorithm_signed_tb   }
+gui_list_sort -id  Data.1   {Variable}
+gui_use_schematics 
+gui_path_show -objects Booth3_algorithm_signed_tb
+gui_zoom -window Schematic.2 -rect { {-8384 -4087} {18412 14114} }
+gui_zoom -window Schematic.2 -rect { {-464 -315} {465 316} }
+gui_zoom -window Schematic.2 -rect { {-464 -315} {465 316} }
+gui_use_schematics 
+gui_sch_show -name Booth3_algorithm_signed_tb
+gui_zoom -window Schematic.3 -rect { {-8384 -4087} {18412 14114} }
+gui_zoom -window Schematic.3 -rect { {-2004 -16388} {28960 4643} }
+gui_zoom -window Schematic.3 -rect { {-2004 -16388} {28960 4643} }
+gui_zoom -window Schematic.3 -rect { {-2004 -16388} {28960 4643} }
+gui_schematic_select -id Schematic.3 -type {cell} -parent {Booth3_algorithm_signed_tb} {Booth3_algorithm_signed_tb.booth0}
+gui_sch_viewport_backup -id Schematic.3 -type save
+gui_sch_show -window Schematic.3 -name Booth3_algorithm_signed_tb.booth0
+gui_zoom -window Schematic.3 -rect { {-5533 -784633} {1500147 238063} }
+gui_zoom -window Schematic.3 -rect { {-5533 -784633} {1500147 238063} }
+gui_sch_viewport_backup -id Schematic.3 -type restore -action in -pins {} -slct_targets global
+gui_schematic_clear_selection -id Schematic.3
+gui_zoom -window Schematic.3 -rect { {-68588 -761248} {1365393 212748} }
+gui_zoom -window Schematic.3 -rect { {-134448 -738094} {1231249 189521} }
+gui_zoom -window Schematic.3 -rect { {-202281 -715273} {1098383 168170} }
+gui_zoom -window Schematic.3 -rect { {-239955 -675053} {942466 128077} }
+gui_zoom -window Schematic.3 -rect { {-249168 -657113} {876948 107773} }
+gui_zoom -window Schematic.3 -rect { {-233189 -622290} {790552 73061} }
+gui_zoom -window Schematic.3 -rect { {-241008 -605340} {733984 56898} }
+gui_zoom -window Schematic.3 -rect { {-248555 -589848} {680009 40856} }
+gui_zoom -window Schematic.3 -rect { {-236015 -561043} {608134 12324} }
+gui_zoom -window Schematic.3 -rect { {-242116 -532961} {561835 13103} }
+gui_zoom -window Schematic.3 -rect { {-229794 -499293} {535873 20768} }
+gui_zoom -window Schematic.3 -rect { {-199225 -455461} {496837 17321} }
+gui_zoom -window Schematic.3 -rect { {-171638 -415955} {461145 13847} }
+gui_zoom -window Schematic.3 -rect { {-160253 -388742} {442397 20594} }
+gui_zoom -window Schematic.3 -rect { {-136310 -354124} {411554 17999} }
+gui_zoom -window Schematic.3 -rect { {-126481 -330450} {395294 23953} }
+gui_zoom -window Schematic.3 -rect { {-129049 -329274} {367880 8253} }
+gui_zoom -window Schematic.3 -rect { {-121268 -321396} {330485 -14553} }
+gui_zoom -window Schematic.3 -rect { {-113842 -313704} {296844 -34756} }
+gui_zoom -window Schematic.3 -rect { {-107170 -306510} {266180 -52921} }
+gui_zoom -window Schematic.3 -rect { {-101142 -300409} {238267 -69873} }
+gui_zoom -window Schematic.3 -rect { {-93226 -295381} {230021 -75823} }
+gui_zoom -window Schematic.3 -rect { {-78486 -285891} {215375 -86294} }
+gui_zoom -window Schematic.3 -rect { {-71466 -281131} {208401 -91038} }
+gui_zoom -window Schematic.3 -rect { {-64939 -276570} {201601 -95529} }
+gui_zoom -window Schematic.3 -rect { {-52837 -268562} {189473 -103979} }
+gui_zoom -window Schematic.3 -rect { {-47123 -264712} {183648 -107966} }
+gui_zoom -window Schematic.3 -rect { {-45621 -259507} {174161 -110226} }
+gui_zoom -window Schematic.3 -rect { {-39384 -251119} {160418 -115409} }
+gui_zoom -window Schematic.3 -rect { {-38155 -246439} {152132 -117191} }
+gui_zoom -window Schematic.3 -rect { {-25592 -234354} {132981 -126647} }
+gui_zoom -window Schematic.3 -rect { {-24568 -230664} {126454 -128086} }
+gui_zoom -window Schematic.3 -rect { {-23585 -227118} {120245 -129425} }
+gui_zoom -window Schematic.3 -rect { {-16826 -219660} {108243 -134709} }
+gui_zoom -window Schematic.3 -rect { {-13277 -214948} {100423 -137720} }
+gui_zoom -window Schematic.3 -rect { {-7908 -209110} {90961 -141956} }
+gui_zoom -window Schematic.3 -rect { {-5942 -206222} {88220 -142265} }
+gui_zoom -window Schematic.3 -rect { {-230 -200845} {81649 -145231} }
+gui_zoom -window Schematic.3 -rect { {3095 -197352} {77531 -146793} }
+gui_zoom -window Schematic.3 -rect { {4518 -195204} {75409 -147053} }
+gui_zoom -window Schematic.3 -rect { {5870 -193122} {73385 -147263} }
+gui_zoom -window Schematic.3 -rect { {7150 -191149} {71451 -147474} }
+gui_zoom -window Schematic.3 -rect { {8426 -189257} {69664 -147662} }
+gui_zoom -window Schematic.3 -rect { {10955 -186596} {66626 -148783} }
+gui_zoom -window Schematic.3 -rect { {12056 -184975} {65077 -148963} }
+gui_zoom -window Schematic.3 -rect { {13081 -183415} {63576 -149118} }
+gui_zoom -window Schematic.3 -rect { {14082 -181958} {62174 -149294} }
+gui_schematic_select -id Schematic.3 -type {cell} -parent {Booth3_algorithm_signed_tb.booth0} {Booth3_algorithm_signed_tb.booth0.U100}
+gui_zoom -window Schematic.3 -rect { {16091 -180048} {61892 -148939} }
+gui_zoom -window Schematic.3 -rect { {18017 -178221} {61637 -148593} }
+gui_zoom -window Schematic.3 -rect { {19854 -176475} {61397 -148258} }
+gui_zoom -window Schematic.3 -rect { {21603 -174808} {61167 -147934} }
+gui_zoom -window Schematic.3 -rect { {21251 -174545} {62898 -146258} }
+gui_zoom -window Schematic.3 -rect { {18316 -176030} {67312 -142750} }
+gui_zoom -window Schematic.3 -rect { {17872 -175739} {69447 -140707} }
+gui_zoom -window Schematic.3 -rect { {17445 -175467} {71735 -138592} }
+gui_zoom -window Schematic.3 -rect { {16922 -175165} {74069 -136350} }
+gui_schematic_select -id Schematic.3 -type {cell} -parent {Booth3_algorithm_signed_tb.booth0} {Booth3_algorithm_signed_tb.booth0.U100}
+gui_zoom -window Schematic.3 -rect { {14870 -177496} {75024 -136638} }
+gui_zoom -window Schematic.3 -rect { {12757 -179960} {76077 -136951} }
+gui_zoom -window Schematic.3 -rect { {10522 -182576} {77175 -137303} }
+gui_zoom -window Schematic.3 -rect { {8165 -185291} {78327 -137635} }
+gui_zoom -window Schematic.3 -rect { {5689 -188125} {79543 -137961} }
+gui_zoom -window Schematic.3 -rect { {6900 -188534} {77238 -140759} }
+gui_zoom -window Schematic.3 -rect { {8126 -188577} {75114 -143077} }
+gui_zoom -window Schematic.3 -rect { {9493 -188069} {73291 -144735} }
+gui_zoom -window Schematic.3 -rect { {12190 -186396} {70188 -147002} }
+gui_zoom -window Schematic.3 -rect { {13421 -185593} {68657 -148075} }
+gui_zoom -window Schematic.3 -rect { {14618 -184848} {67224 -149117} }
+gui_zoom -window Schematic.3 -rect { {16209 -184252} {66310 -150222} }
+gui_zoom -window Schematic.3 -rect { {19776 -182247} {63342 -152656} }
+gui_zoom -window Schematic.3 -rect { {21080 -181718} {62571 -153536} }
+gui_zoom -window Schematic.3 -rect { {22341 -181144} {61857 -154304} }
+gui_zoom -window Schematic.3 -rect { {23514 -180534} {61148 -154972} }
+gui_zoom -window Schematic.3 -rect { {24638 -179938} {60480 -155593} }
+gui_zoom -window Schematic.3 -rect { {26476 -178872} {59060 -156740} }
+gui_zoom -window Schematic.3 -rect { {27455 -178309} {58487 -157231} }
+gui_zoom -window Schematic.3 -rect { {27775 -178040} {60440 -155853} }
+gui_zoom -window Schematic.3 -rect { {27185 -178431} {63480 -153778} }
+gui_zoom -window Schematic.3 -rect { {27582 -178135} {65787 -152185} }
+gui_zoom -window Schematic.3 -rect { {26883 -178582} {69333 -149749} }
+gui_zoom -window Schematic.3 -rect { {27323 -178219} {72007 -147869} }
+gui_zoom -window Schematic.3 -rect { {27784 -177842} {74820 -145894} }
+gui_zoom -window Schematic.3 -rect { {28269 -177450} {77780 -143821} }
+gui_zoom -window Schematic.3 -rect { {28726 -177102} {80843 -141703} }
+gui_zoom -window Schematic.3 -rect { {29210 -176695} {84071 -139432} }
+gui_zoom -window Schematic.3 -rect { {22084 -181537} {95232 -131854} }
+gui_zoom -window Schematic.3 -rect { {22619 -181057} {99616 -128758} }
+gui_zoom -window Schematic.3 -rect { {23147 -180682} {104196 -125630} }
+gui_zoom -window Schematic.3 -rect { {23666 -180378} {108981 -122430} }
+gui_zoom -window Schematic.3 -rect { {21778 -181746} {116573 -117359} }
+gui_zoom -window Schematic.3 -rect { {19624 -183367} {124951 -111826} }
+gui_zoom -window Schematic.3 -rect { {20214 -183015} {131086 -107708} }
+gui_zoom -window Schematic.3 -rect { {20811 -182770} {137518 -103500} }
+gui_zoom -window Schematic.3 -rect { {21281 -182995} {144130 -99553} }
+gui_zoom -window Schematic.3 -rect { {18283 -185978} {154782 -93264} }
+gui_zoom -window Schematic.3 -rect { {14675 -189292} {166341 -86276} }
+gui_zoom -window Schematic.3 -rect { {5859 -196196} {184290 -75002} }
+gui_zoom -window Schematic.3 -rect { {6203 -197440} {194024 -69867} }
+gui_zoom -window Schematic.3 -rect { {-4952 -206550} {216014 -56464} }
+gui_close_window -window Schematic.3
+gui_close_window -window Schematic.2
+gui_close_window -window Schematic.1

@@ -1,0 +1,44 @@
+13:57:08    16 -->                                                             [tcl] ucliGUI::connect -toolargs -ucligui -toolexe ./simv -pid 6622 -toolin /tmp/vcs_20220207045704_6621_thkim..stdin -toolout /tmp/vcs_20220207045704_6621_thkim..stdout  
+13:57:08    17 -->                                                                 [tcl] set ucliGUI::state
+13:57:08    18 -->                                                                     [tcl] gui_update_simulator_buttons
+13:57:10    19 -->                                                                         [tcl] set ucliGUI::state
+13:57:10    20 -->                                                                             [tcl] ucliCore::getToolPID
+13:57:10    21 -->                                                                                 [tcl] synopsys::env hasTB
+13:57:10    22 -->                                                                                     [tcl] trigger_hier_stack_context_switch 0
+13:57:10    23 -->                                                                                         [tcl] synUtils::setDVEInitPhase 1
+13:57:10    24 -->                                                                                             [tcl] gui_get_env SIMSETUP::SIMVPD
+13:57:10    25 --> ...  [tcl] synopsys::dump -type VPD -file /home/titan/thkim/work/booth3_mult_signed_8x8/vcs_verification/netlist/work/inter.vpd -locking
+13:57:10    26 --> ...      [tcl] synopsys::dump -autoflush on -fid VPD0
+13:57:10    27 --> ...          [tcl] set ::dve_fid VPD0
+13:57:10    28 --> ...              [tcl] synUtils::setDVEInitPhase 0
+13:57:10    29 --> ...                  [tcl] ucliCore::getToolPID
+13:57:10    30 --> ...                      [tcl] synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpMC5NBJ
+13:57:10    31 --> ...                          [tcl] synUtils::sendTool -active {_icl_start_rpc -version "K-2015.09-SP1_Full64" -sync_file /tmp/vcs_dve_rpc.thkim.6622}
+13:57:10    32 --> ...                              [tcl] synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.thkim.6622}
+13:57:10    33 --> ...                                  [tcl] dveMisc::vbusExpand Booth3_algorithm_signed_tb
+13:57:10    34 --> ...                                      [tcl] config endofsim noexit
+13:57:10    35 --> ...                                          [tcl] config onfail enable all
+13:57:10    36 --> ...                                              [tcl] config syscaddplainmembers
+13:57:10    37 --> ...                                                  [tcl] config syscaddsourcenames
+13:57:10    38 --> ...                                                      [tcl] config syscaddstructtypes
+13:57:10    39 --> ...                                                          [tcl] synopsys::listing -disable
+13:57:28    40 --> ...                                                              [tcl] tcl_source /usr/local/packages/synopsys/vcs-mx/K-2015.09-SP1/gui/dve/auxx/gui/dve/schematic.tcl
+13:57:28    41 --> ...                                                                  [tcl] tcl_source /usr/local/packages/synopsys/vcs-mx/K-2015.09-SP1/gui/dve/auxx/gui/common/schematic/base.tcl
+13:57:28    42 --> ...                                                                      [tcl] tcl_source /usr/local/packages/synopsys/vcs-mx/K-2015.09-SP1/gui/dve/auxx/gui/common/schematic/enable.tcl
+13:57:28    43 --> ...                                                                          [tcl] tcl_source /usr/local/packages/synopsys/vcs-mx/K-2015.09-SP1/gui/dve/auxx/gui/common/schematic/netlist.tcl
+13:57:28    44 --> ...                                                                              [tcl] tcl_source /usr/local/packages/synopsys/vcs-mx/K-2015.09-SP1/gui/dve/auxx/gui/common/schematic/method.tcl
+13:57:28    45 --> ...                                                                                  [tcl] tcl_source /usr/local/packages/synopsys/vcs-mx/K-2015.09-SP1/gui/dve/auxx/gui/common/strokes/stroke_defaults.tcl
+13:57:28    46 --> ...                                                                                      [tcl] tcl_source /usr/local/packages/synopsys/vcs-mx/K-2015.09-SP1/gui/dve/auxx/gui/common/dialogs/ObjectListInfo.tcl
+13:57:28    47 --> ...                                                                                          [tcl] tcl_source /usr/local/packages/synopsys/vcs-mx/K-2015.09-SP1/gui/dve/auxx/gui/common/schematic/DialogPathSchematicFanInOut.tcl
+13:57:28    48 --> ...                                                                                              [tcl] tcl_source /usr/local/packages/synopsys/vcs-mx/K-2015.09-SP1/gui/dve/auxx/gui/dve/driversloads.tcl
+13:57:34    49 --> ...                                                                                                  [tcl] dveMisc::vbusExpand BUSKP_HVT
+13:58:08    50 --> ...  [tcl] if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+13:58:08    51 --> ...      [tcl] synopsys::finish
+13:58:08    52 --> ...          [tcl] set ucliGUI::state
+13:58:08    53 --> ...              [tcl] set ucliGUI::state
+13:58:08    54 --> ...                  [tcl] catch {senv activeDomain} dveMisc::result 
+13:58:08    55 --> ...                      [tcl] set dveMisc::result
+13:58:08    56 --> ...                          [tcl] gui_update_simulator_buttons
+13:58:08    57 --> ...                              [tcl] catch {senv activeDomain} dveMisc::result 
+13:58:08    58 --> ...                                  [tcl] set dveMisc::result
+13:58:08    59 --> ...                                      [tcl] ucli_exit

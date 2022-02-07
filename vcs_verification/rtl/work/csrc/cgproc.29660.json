@@ -1,0 +1,87 @@
+{
+    "Modules": {
+        "full_adder": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "...MASTER...": {},
+        "Booth3_algorithm_signed_tb": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "half_adder": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "partial_product": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "reusePaths": {},
+    "CompUnits": {
+        "ArxBC_d": {
+            "mod": "half_adder",
+            "out": "ArxBC_d.o",
+            "mode": 4,
+            "bytes": 6624,
+            "checksum": 4294967295,
+            "archive": "archive.0/_29660_archive_1.a"
+        },
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "mode": 4,
+            "bytes": 7117,
+            "checksum": 4294967295
+        },
+        "vNecE_d": {
+            "mod": "Booth3_algorithm_signed_tb",
+            "out": "vNecE_d.o",
+            "mode": 4,
+            "bytes": 37525,
+            "checksum": 4294967295,
+            "archive": "archive.0/_29660_archive_1.a"
+        },
+        "BEdzp_d": {
+            "mod": "full_adder",
+            "out": "BEdzp_d.o",
+            "mode": 4,
+            "bytes": 8260,
+            "checksum": 4294967295,
+            "archive": "archive.0/_29660_archive_1.a"
+        },
+        "mETiY_d": {
+            "mod": "partial_product",
+            "out": "mETiY_d.o",
+            "mode": 4,
+            "bytes": 37077,
+            "checksum": 4294967295,
+            "archive": "archive.0/_29660_archive_1.a"
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.0/_29660_archive_1.a",
+            "objects": [
+                [
+                    "vNecE_d.o",
+                    37525
+                ],
+                [
+                    "mETiY_d.o",
+                    37077
+                ],
+                [
+                    "BEdzp_d.o",
+                    8260
+                ],
+                [
+                    "ArxBC_d.o",
+                    6624
+                ]
+            ],
+            "size": 89486
+        }
+    ]
+}

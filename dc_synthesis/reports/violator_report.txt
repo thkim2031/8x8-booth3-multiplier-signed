@@ -1,0 +1,56 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : top
+Version: Q-2019.12-SP5-5
+Date   : Mon Feb  7 11:38:44 2022
+****************************************
+
+
+   max_delay/setup ('CLK' group)
+
+                             Required        Actual
+   Endpoint                 Path Delay     Path Delay        Slack
+   -----------------------------------------------------------------
+   final_result_r_reg[14]/D     2.34           2.40 r        -0.05  (VIOLATED)
+   final_result_r_reg[15]/D     2.36           2.40 r        -0.04  (VIOLATED)
+   final_result_r_reg[13]/D     2.36           2.39 r        -0.04  (VIOLATED)
+   final_result_r_reg[12]/D     2.35           2.36 r        -0.01  (VIOLATED)
+
+
+   min_delay/hold ('CLK' group)
+
+                             Required        Actual
+   Endpoint                 Path Delay     Path Delay        Slack
+   -----------------------------------------------------------------
+   multiplicand_r_reg[2]/D      0.00           0.00 f         0.00  (VIOLATED: increase significant digits)
+   multiplicand_r_reg[4]/D      0.00           0.00 f         0.00  (VIOLATED: increase significant digits)
+   multiplier_r_reg[2]/D        0.00           0.00 f         0.00  (VIOLATED: increase significant digits)
+
+
+   max_transition
+
+                             Required        Actual
+   Net                      Transition     Transition        Slack
+   -----------------------------------------------------------------
+   multiplier_r[7]              0.12           0.13          -0.01  (VIOLATED)
+       PIN :   multiplier_r_reg[7]/Q
+                                0.12           0.13          -0.01  (VIOLATED)
+   multiplicand_r[7]            0.12           0.13          -0.01  (VIOLATED)
+       PIN :   multiplicand_r_reg[7]/Q
+                                0.12           0.13          -0.01  (VIOLATED)
+
+   -----------------------------------------------------------------
+   Total                      2                  -0.02  
+
+   max_leakage_power
+
+                             Required        Actual
+   Design                   Leakage Power  Leakage Power     Slack
+   -----------------------------------------------------------------
+   top                          0.00       28663602.00    -28663602.00
+                                                                    (VIOLATED)
+
+
+1

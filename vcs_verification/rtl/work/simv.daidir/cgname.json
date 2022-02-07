@@ -1,0 +1,27 @@
+{
+    "Booth3_algorithm_signed_tb": [
+        "Booth3_algorithm_signed_tb",
+        "vNecE",
+        "module"
+    ],
+    "half_adder": [
+        "half_adder",
+        "ArxBC",
+        "module"
+    ],
+    "partial_product": [
+        "partial_product",
+        "mETiY",
+        "module"
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module"
+    ],
+    "full_adder": [
+        "full_adder",
+        "BEdzp",
+        "module"
+    ]
+}

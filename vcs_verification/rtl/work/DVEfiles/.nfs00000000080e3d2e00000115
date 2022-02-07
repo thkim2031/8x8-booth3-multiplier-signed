@@ -1,0 +1,26 @@
+Chronologic VCS simulator copyright 1991-2015
+Contains Synopsys proprietary information.
+Compiler version K-2015.09-SP1_Full64; Runtime version K-2015.09-SP1_Full64;  Feb  3 15:47 2022
+VCD+ Writer K-2015.09-SP1_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
+The file '/home/titan/thkim/work/booth3_mult_signed_8x8/vcs_verification/rtl/work/inter.vpd' was opened successfully.
+500000 ps
+---------------------------------------------
+
+The tool has just exited abnormally:
+
+
+Release = 'K-2015.09-SP1_Full64'  Architecture = 'amd64'  Program = 'DVE'
+
+'33090513 33127706 33129587 140504169959392 140504173678688'
+
+---------------------------------------------
+=======================DVE Context and Call Stack=========================
+Command line: /usr/local/packages/synopsys/vcs-mx/K-2015.09-SP1/gui/dve/linux64/bin/dve.exe -full64 -ucliplatform=linux64 -toolargs "-ucligui -toolexe ./simv  -pid 13498" -toolin /tmp/vcs_20220203064732_13497_thkim..stdin -toolout /tmp/vcs_20220203064732_13497_thkim..stdout
+
+--- Stack trace follows:
+ptrace: Operation not permitted.
+/home/titan/thkim/work/booth3_mult_signed_8x8/vcs_verification/rtl/work/13509: No such file or directory.
+/tmp/.stack_annotator_gdb_cmd_file_H2bh98:3: Error in sourced command file:
+The program is not being run.
+No context available
+==========================================================================

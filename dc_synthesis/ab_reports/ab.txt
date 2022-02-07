@@ -1,0 +1,50 @@
+ 
+****************************************
+Report : area
+Design : top
+Version: Q-2019.12-SP5-5
+Date   : Fri Jan 28 13:55:31 2022
+****************************************
+
+Information: Updating design information... (UID-85)
+Information: Timing loop detected. (OPT-150)
+	U264/A2 U264/Y 
+Warning: Disabling timing arc between pins 'A2' and 'Y' on cell 'U264'
+         to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A2' and 'Y' on cell 'U264'
+         to break a timing loop. (OPT-314)
+Library(s) Used:
+
+    saed32hvt_ss0p95v125c (File: /soc/vlsi/PDK/SAED32_EDK_01132015/lib/stdcell_hvt/db_nldm/saed32hvt_ss0p95v125c.db)
+
+Number of ports:                           34
+Number of nets:                           580
+Number of cells:                          547
+Number of combinational cells:            507
+Number of sequential cells:                32
+Number of macros/black boxes:               0
+Number of buf/inv:                        120
+Number of references:                      43
+
+Combinational area:               1236.664711
+Buf/Inv area:                      167.989186
+Noncombinational area:             215.259974
+Macro/Black Box area:                0.000000
+Net Interconnect area:             224.645884
+
+Total cell area:                  1451.924685
+Total area:                       1676.570568
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  ---------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-     Noncombi-  Black-
+                                  Total      Total    national   national   boxes   Design
+--------------------------------  ---------  -------  ---------  ---------  ------  ---------
+top                               1451.9247    100.0  1236.6647   215.2600  0.0000  top
+--------------------------------  ---------  -------  ---------  ---------  ------  ---------
+Total                                                 1236.6647   215.2600  0.0000
+
+1

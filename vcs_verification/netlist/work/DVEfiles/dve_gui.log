@@ -1,0 +1,18 @@
+Chronologic VCS simulator copyright 1991-2015
+Contains Synopsys proprietary information.
+Compiler version K-2015.09-SP1_Full64; Runtime version K-2015.09-SP1_Full64;  Feb  7 13:57 2022
+VCD+ Writer K-2015.09-SP1_Full64 Copyright (c) 1991-2015 by Synopsys Inc.
+The file '/home/titan/thkim/work/booth3_mult_signed_8x8/vcs_verification/netlist/work/inter.vpd' was opened successfully.
+aries/syn/generic.sdb'
+aries/syn/vcs.sdb'
+aries/syn/vcs.sdb'
+aries/syn/vcs.sdb'
+aries/syn/generic.sdb'
+dve> 
+dve> 
+dve> 
+dve> 
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 0 ps
+CPU Time:      0.630 seconds;       Data structure size:   0.8Mb
+Mon Feb  7 13:58:08 2022

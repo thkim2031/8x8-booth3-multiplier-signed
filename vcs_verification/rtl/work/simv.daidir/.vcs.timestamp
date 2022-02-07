@@ -1,0 +1,102 @@
+0 
+39
++cli+4
++itf+/usr/local/packages/synopsys/vcs-mx/K-2015.09-SP1/linux64/lib/vcsd.tab
++memcbk
++vcsd
++vpi
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/usr/local/packages/synopsys/vcs-mx/K-2015.09-SP1/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags=-L/usr/lib/x86_64-linux-gnu -L/lib/x86_64-linux-gnu -Wl,--no-as-needed -rdynamic
+-Mobjects= /usr/local/packages/synopsys/vcs-mx/K-2015.09-SP1/linux64/lib/libvirsim.so /usr/local/packages/synopsys/vcs-mx/K-2015.09-SP1/linux64/lib/liberrorinf.so /usr/local/packages/synopsys/vcs-mx/K-2015.09-SP1/linux64/lib/libsnpsmalloc.so
+-Mout=simv
+-Msaverestoreobj=/usr/local/packages/synopsys/vcs-mx/K-2015.09-SP1/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=-ldl -lm
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/usr/local/packages/synopsys/vcs-mx/K-2015.09-SP1/include
+-Xcbug=0x1
+-debug=3
+-full64
+-gen_obj
+-gui
+-o simv
+-picarchive
+-ucli
+../../../v_file/Booth3_algorithm_signed_tb.v
+../../../v_file/adder_3M.v
+../../../v_file/booth.v
+../../../v_file/cra.v
+../../../v_file/full_adder.v
+../../../v_file/half_adder.v
+../../../v_file/partial_product.v
+../../../v_file/top.v
+/usr/local/packages/synopsys/vcs-mx/K-2015.09-SP1/linux64/bin/vcs1
+43
+sysc_uni_pwd=/home/titan/thkim/work/booth3_mult_signed_8x8/vcs_verification/rtl/work
+XDG_SESSION_ID=2100
+XDG_RUNTIME_DIR=/run/user/1003
+XDG_DATA_DIRS=/usr/local/share:/usr/share:/var/lib/snapd/desktop
+VMR_MODE_FLAG=64
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_HOME=/usr/local/packages/synopsys/vcs-mx/K-2015.09-SP1
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+UNAME=/bin/uname
+TOOL_HOME=/usr/local/packages/synopsys/vcs-mx/K-2015.09-SP1/linux64
+SSH_TTY=/dev/pts/25
+SSH_CONNECTION=10.80.89.160 63349 10.80.89.142 22
+SSH_CLIENT=10.80.89.160 63349 22
+SNPS_VCS_INTERNAL_LINKER_NEEDS_NO_AS_NEEDED=1
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+QT_QPA_PLATFORMTHEME=appmenu-qt5
+PYTHONPATH=/home/shared/research/nnc2:/home/shared/research/caffe/python:/home/shared/research
+PYLEARN2_DATA_PATH=/home/titan/engrkashif/data
+PACKAGES=/usr/local/packages/synopsys
+OVA_UUM=0
+NNC_HOME=/home/shared/research/nnc2
+LIBRARY_PATH=/usr/lib/x86_64-linux-gnu
+LESSOPEN=| /usr/bin/lesspipe %s
+LESSCLOSE=/usr/bin/lesspipe %s %s
+LC_TIME=ko_KR.UTF-8
+LC_TELEPHONE=ko_KR.UTF-8
+LC_PAPER=ko_KR.UTF-8
+LC_NUMERIC=ko_KR.UTF-8
+LC_NAME=ko_KR.UTF-8
+LC_MONETARY=ko_KR.UTF-8
+LC_MEASUREMENT=ko_KR.UTF-8
+LC_IDENTIFICATION=ko_KR.UTF-8
+LC_ALL=C
+LC_ADDRESS=ko_KR.UTF-8
+JRE_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
+JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+INSIGHT_HOME=/home/shared/research/insight
+ICV_HOME_DIR=/usr/local/packages/synopsys/icvalidator/S-2021.06-SP1
+CPATH=/usr/include/x86_64-linux-gnu
+0
+9
+1643345773 ../../../v_file/top.v
+1643271727 ../../../v_file/adder_3M.v
+1642414059 ../../../v_file/half_adder.v
+1642406008 ../../../v_file/full_adder.v
+1643345721 ../../../v_file/partial_product.v
+1643286667 ../../../v_file/cra.v
+1643345834 ../../../v_file/booth.v
+1643345671 ../../../v_file/Booth3_algorithm_signed_tb.v
+1448424285 /usr/local/packages/synopsys/vcs-mx/K-2015.09-SP1/linux64/lib/vcsd.tab
+4
+0 
+1448427877 /usr/local/packages/synopsys/vcs-mx/K-2015.09-SP1/linux64/lib/libvirsim.so
+1448427558 /usr/local/packages/synopsys/vcs-mx/K-2015.09-SP1/linux64/lib/liberrorinf.so
+1448427538 /usr/local/packages/synopsys/vcs-mx/K-2015.09-SP1/linux64/lib/libsnpsmalloc.so
+1644197650 simv.daidir

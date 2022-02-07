@@ -1,0 +1,75 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+              Version Q-2019.12-SP5-5 for linux64 - Mar 21, 2021 
+
+                    Copyright (c) 1988 - 2021 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+# run this file with: dc_shell-xg-t -f dcopt.tcl | tee dcopt.out
+#KashifInayatScript-INU
+#DesignCompiler-Synopsys
+set search_path [list .]
+.
+set edk_home /soc/vlsi/PDK/SAED32_EDK_01132015/
+/soc/vlsi/PDK/SAED32_EDK_01132015/
+set io_dir $edk_home/lib/io_std
+/soc/vlsi/PDK/SAED32_EDK_01132015//lib/io_std
+set pll_dir $edk_home/lib/pll
+/soc/vlsi/PDK/SAED32_EDK_01132015//lib/pll
+set stdcell_dir $edk_home/lib/stdcell_hvt
+/soc/vlsi/PDK/SAED32_EDK_01132015//lib/stdcell_hvt
+## Setup DB
+set io_db_dir $io_dir/db_nldm
+/soc/vlsi/PDK/SAED32_EDK_01132015//lib/io_std/db_nldm
+set pll_db_dir $pll_dir/db_nldm
+/soc/vlsi/PDK/SAED32_EDK_01132015//lib/pll/db_nldm
+set stdcell_db_dir $stdcell_dir/db_nldm
+/soc/vlsi/PDK/SAED32_EDK_01132015//lib/stdcell_hvt/db_nldm
+set synthetic_library dw_foundation.sldb
+dw_foundation.sldb
+set link_library "*  $stdcell_db_dir/saed32hvt_ss0p95v125c.db   $pll_db_dir/saed32pll_ss0p95v125c_2p25v.db  $io_db_dir/saed32io_fc_ss0p95v125c_2p25v.db     $synthetic_library"
+*  /soc/vlsi/PDK/SAED32_EDK_01132015//lib/stdcell_hvt/db_nldm/saed32hvt_ss0p95v125c.db   /soc/vlsi/PDK/SAED32_EDK_01132015//lib/pll/db_nldm/saed32pll_ss0p95v125c_2p25v.db  /soc/vlsi/PDK/SAED32_EDK_01132015//lib/io_std/db_nldm/saed32io_fc_ss0p95v125c_2p25v.db     dw_foundation.sldb
+set target_library "  $stdcell_db_dir/saed32hvt_ss0p95v125c.db  $pll_db_dir/saed32pll_ss0p95v125c_2p25v.db   $io_db_dir/saed32io_fc_ss0p95v125c_2p25v.db  "
+  /soc/vlsi/PDK/SAED32_EDK_01132015//lib/stdcell_hvt/db_nldm/saed32hvt_ss0p95v125c.db  /soc/vlsi/PDK/SAED32_EDK_01132015//lib/pll/db_nldm/saed32pll_ss0p95v125c_2p25v.db   /soc/vlsi/PDK/SAED32_EDK_01132015//lib/io_std/db_nldm/saed32io_fc_ss0p95v125c_2p25v.db  
+set abreports_dir ab_reports
+ab_reports
+if { ! [ file exists $abreports_dir ] } {
+         file mkdir $abreports_dir
+}
+sh rm -rf ./WORK
+define_design_lib WORK -path WORK
+1
+read_file -f ddc  designs/booth_netlist.ddc
+Loading db file '/soc/vlsi/PDK/SAED32_EDK_01132015/lib/stdcell_hvt/db_nldm/saed32hvt_ss0p95v125c.db'
+Loading db file '/soc/vlsi/PDK/SAED32_EDK_01132015/lib/pll/db_nldm/saed32pll_ss0p95v125c_2p25v.db'
+Loading db file '/soc/vlsi/PDK/SAED32_EDK_01132015/lib/io_std/db_nldm/saed32io_fc_ss0p95v125c_2p25v.db'
+Loading db file '/usr/local/packages/synopsys/dc/syn/Q-2019.12-SP5-5/libraries/syn/dw_foundation.sldb'
+Loading db file '/usr/local/packages/synopsys/dc/syn/Q-2019.12-SP5-5/libraries/syn/gtech.db'
+Loading db file '/usr/local/packages/synopsys/dc/syn/Q-2019.12-SP5-5/libraries/syn/standard.sldb'
+  Loading link library 'saed32hvt_ss0p95v125c'
+  Loading link library 'saed32pll_ss0p95v125c_2p25v'
+  Loading link library 'saed32io_fc_ss0p95v125c_2p25v'
+  Loading link library 'gtech'
+Reading ddc file '/home/titan/thkim/work/booth3_mult_signed_8x8/dc_synthesis/designs/booth_netlist.ddc'.
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Loaded 1 design.
+Current design is 'top'.
+top
+report_area -hier > $abreports_dir/ab.txt
+report_register > $abreports_dir/abreg.txt
+Warning: Cannot use command line editor for terminal type 'xterm-256color'.  (UI-74)
+dc_shell> 

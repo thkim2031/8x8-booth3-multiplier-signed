@@ -1,0 +1,97 @@
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : top
+Version: Q-2019.12-SP5-5
+Date   : Fri Jan 28 16:03:40 2022
+****************************************
+
+Operating Conditions: ss0p95v125c   Library: saed32hvt_ss0p95v125c
+Wire Load Model Mode: enclosed
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+final_result_r_reg[14]/D (DFFASX1_HVT)
+                                    2.40 r            2.40         0.00
+final_result_r_reg[13]/D (DFFASX1_HVT)
+                                    2.38 f            2.40         0.02
+final_result_r_reg[15]/D (DFFX1_HVT)
+                                    2.37 r            2.40         0.03
+final_result_r_reg[12]/D (DFFASX1_HVT)
+                                    2.30 r            2.41         0.11
+final_result_r_reg[11]/D (DFFX1_HVT)
+                                    2.18 r            2.39         0.21
+final_result_r_reg[10]/D (DFFX1_HVT)
+                                    2.12 r            2.40         0.28
+final_result_r_reg[9]/D (DFFX1_HVT)
+                                    2.05 r            2.40         0.35
+final_result_r_reg[8]/D (DFFX1_HVT)
+                                    1.95 r            2.40         0.44
+final_result_r_reg[7]/D (DFFX1_HVT)
+                                    1.81 r            2.40         0.59
+final_result_r_reg[6]/D (DFFX1_HVT)
+                                    1.72 r            2.40         0.68
+final_result_r_reg[5]/D (DFFX1_HVT)
+                                    1.41 r            2.40         0.99
+final_result_r_reg[4]/D (DFFX1_HVT)
+                                    1.29 r            2.40         1.11
+final_result_r_reg[3]/D (DFFX1_HVT)
+                                    1.16 r            2.40         1.24
+final_result_r_reg[2]/D (DFFX1_HVT)
+                                    1.08 f            2.42         1.34
+final_result_r_reg[1]/D (DFFX1_HVT)
+                                    0.91 r            2.39         1.47
+final_result_r_reg[0]/D (DFFX1_HVT)
+                                    0.33 r            2.39         2.06
+final_result[14] (out)              0.22 f            2.48         2.26
+final_result[13] (out)              0.22 f            2.48         2.26
+final_result[15] (out)              0.19 f            2.48         2.29
+final_result[10] (out)              0.19 f            2.48         2.29
+final_result[9] (out)               0.19 f            2.48         2.29
+final_result[8] (out)               0.19 f            2.48         2.29
+final_result[7] (out)               0.19 f            2.48         2.29
+final_result[6] (out)               0.19 f            2.48         2.29
+final_result[5] (out)               0.19 f            2.48         2.29
+final_result[4] (out)               0.19 f            2.48         2.29
+final_result[3] (out)               0.19 f            2.48         2.29
+final_result[2] (out)               0.19 f            2.48         2.29
+final_result[1] (out)               0.19 f            2.48         2.29
+final_result[0] (out)               0.19 f            2.48         2.29
+multiplicand_r_reg[4]/SETB (DFFSSRX1_HVT)
+                                    0.00 f            2.29         2.29
+multiplicand_r_reg[0]/SETB (DFFSSRX1_HVT)
+                                    0.00 f            2.29         2.29
+multiplicand_r_reg[3]/SETB (DFFSSRX2_HVT)
+                                    0.00 r            2.29         2.29
+multiplicand_r_reg[6]/SETB (DFFSSRX2_HVT)
+                                    0.00 r            2.29         2.29
+final_result[12] (out)              0.17 r            2.48         2.31
+final_result[11] (out)              0.15 r            2.48         2.33
+multiplier_r_reg[2]/D (DFFX2_HVT)
+                                    0.00 r            2.40         2.40
+multiplier_r_reg[6]/D (DFFX1_HVT)
+                                    0.00 r            2.41         2.41
+multiplier_r_reg[4]/D (DFFX1_HVT)
+                                    0.00 r            2.41         2.41
+multiplier_r_reg[1]/D (DFFX1_HVT)
+                                    0.00 r            2.41         2.41
+multiplier_r_reg[0]/D (DFFX1_HVT)
+                                    0.00 r            2.41         2.41
+multiplicand_r_reg[7]/D (DFFX1_HVT)
+                                    0.00 r            2.41         2.41
+multiplicand_r_reg[5]/D (DFFX1_HVT)
+                                    0.00 r            2.41         2.41
+multiplier_r_reg[7]/D (DFFX1_HVT)
+                                    0.00 r            2.41         2.41
+multiplier_r_reg[3]/D (DFFX1_HVT)
+                                    0.00 r            2.41         2.41
+multiplicand_r_reg[2]/D (DFFX1_HVT)
+                                    0.00 r            2.41         2.41
+multiplicand_r_reg[1]/D (DFFX1_HVT)
+                                    0.00 r            2.41         2.41
+multiplier_r_reg[5]/D (DFFX1_HVT)
+                                    0.00 r            2.41         2.41
+
+1

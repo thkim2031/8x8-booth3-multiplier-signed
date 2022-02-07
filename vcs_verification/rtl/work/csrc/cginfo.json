@@ -1,0 +1,106 @@
+{
+    "LVLData": [
+        "SIM"
+    ],
+    "NameTable": {
+        "Booth3_algorithm_signed_tb": [
+            "Booth3_algorithm_signed_tb",
+            "vNecE",
+            "module"
+        ],
+        "half_adder": [
+            "half_adder",
+            "ArxBC",
+            "module"
+        ],
+        "partial_product": [
+            "partial_product",
+            "mETiY",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ],
+        "full_adder": [
+            "full_adder",
+            "BEdzp",
+            "module"
+        ]
+    },
+    "stat": {
+        "ru_self_cgstart": {
+            "ru_maxrss_kb": 75528,
+            "ru_utime_sec": 0.10208,
+            "ru_stime_sec": 0.029773000000000001,
+            "ru_minflt": 4751,
+            "ru_majflt": 0,
+            "ru_nivcsw": 2,
+            "ru_nvcsw": 178
+        },
+        "ru_childs_cgstart": {
+            "ru_maxrss_kb": 15420,
+            "ru_utime_sec": 0.0055890000000000002,
+            "ru_stime_sec": 0.0,
+            "ru_minflt": 188,
+            "ru_majflt": 0,
+            "ru_nivcsw": 0,
+            "ru_nvcsw": 2
+        },
+        "nMops": 6429,
+        "nQuads": 1850,
+        "totalObjSize": 186021,
+        "mopSpeed": 106333.00805477913,
+        "ru_self_end": {
+            "ru_maxrss_kb": 85904,
+            "ru_utime_sec": 0.16254099999999999,
+            "ru_stime_sec": 0.043608000000000001,
+            "ru_minflt": 6726,
+            "ru_majflt": 0,
+            "ru_nivcsw": 2,
+            "ru_nvcsw": 250
+        },
+        "ru_childs_end": {
+            "ru_maxrss_kb": 15420,
+            "ru_utime_sec": 0.0055890000000000002,
+            "ru_stime_sec": 0.0,
+            "ru_minflt": 188,
+            "ru_majflt": 0,
+            "ru_nivcsw": 0,
+            "ru_nvcsw": 2
+        },
+        "outputSizePerQuad": 100.0,
+        "mop/quad": 3.4751351351351349,
+        "quadSpeed": 30598.236879972221,
+        "CodeGen(%)": 37.197384044641041,
+        "Frontend(%)": 62.802615955358959
+    },
+    "CurCompileModules": [
+        "...MASTER...",
+        "Booth3_algorithm_signed_tb",
+        "partial_product",
+        "full_adder",
+        "half_adder"
+    ],
+    "CompileStrategy": "fullobj",
+    "CompileStatus": "Successful",
+    "CurCompileUdps": {},
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 89418
+    },
+    "PEModules": [],
+    "CompileProcesses": [
+        "cgproc.29660.json"
+    ],
+    "Misc": {
+        "csrc": "csrc",
+        "cwd": "/home/titan/thkim/work/booth3_mult_signed_8x8/vcs_verification/rtl/work",
+        "daidir": "/home/titan/thkim/work/booth3_mult_signed_8x8/vcs_verification/rtl/work/simv.daidir",
+        "csrc_abs": "/home/titan/thkim/work/booth3_mult_signed_8x8/vcs_verification/rtl/work/csrc",
+        "daidir_abs": "/home/titan/thkim/work/booth3_mult_signed_8x8/vcs_verification/rtl/work/simv.daidir",
+        "default_output_dir": "csrc",
+        "archive_dir": "archive.0"
+    }
+}

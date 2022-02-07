@@ -1,0 +1,73 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : top
+Version: Q-2019.12-SP5-5
+Date   : Mon Feb  7 11:38:44 2022
+****************************************
+
+Operating Conditions: ss0p95v125c   Library: saed32hvt_ss0p95v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: multiplicand_r_reg[0]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: final_result_r_reg[14]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                8000                  saed32hvt_ss0p95v125c
+  booth              8000                  saed32hvt_ss0p95v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  multiplicand_r_reg[0]/CLK (DFFX1_HVT)                   0.00       0.00 r
+  multiplicand_r_reg[0]/QN (DFFX1_HVT)                    0.16       0.16 r
+  U6/Y (INVX1_HVT)                                        0.04       0.20 f
+  booth0/x[0] (booth)                                     0.00       0.20 f
+  booth0/U510/Y (OA21X1_HVT)                              0.10       0.31 f
+  booth0/intadd_0/U6/S (FADDX1_HVT)                       0.20       0.50 r
+  booth0/U343/Y (AO21X1_HVT)                              0.13       0.63 r
+  booth0/U413/Y (XOR2X2_HVT)                              0.14       0.77 f
+  booth0/U402/Y (OAI22X1_HVT)                             0.10       0.87 r
+  booth0/U399/Y (AND2X1_HVT)                              0.07       0.94 r
+  booth0/U453/Y (AO21X1_HVT)                              0.07       1.01 r
+  booth0/U186/Y (OA21X1_HVT)                              0.11       1.11 r
+  booth0/U293/Y (OAI22X1_HVT)                             0.12       1.23 f
+  booth0/U380/Y (AO21X1_HVT)                              0.10       1.33 f
+  booth0/U178/Y (INVX1_HVT)                               0.03       1.36 r
+  booth0/U176/Y (OA22X1_HVT)                              0.11       1.47 r
+  booth0/U175/Y (XOR2X2_HVT)                              0.15       1.62 f
+  booth0/U174/Y (OR2X1_HVT)                               0.07       1.69 f
+  booth0/U58/Y (NAND2X0_HVT)                              0.04       1.73 r
+  booth0/U158/Y (AO21X1_HVT)                              0.12       1.86 r
+  booth0/U156/Y (INVX1_HVT)                               0.04       1.89 f
+  booth0/U159/Y (NAND2X0_HVT)                             0.06       1.95 r
+  booth0/U319/Y (NAND3X0_HVT)                             0.07       2.02 f
+  booth0/U33/Y (AND2X1_HVT)                               0.09       2.11 f
+  booth0/U32/Y (AO21X1_HVT)                               0.07       2.18 f
+  booth0/U59/Y (XOR3X2_HVT)                               0.21       2.40 r
+  booth0/final_result[14] (booth)                         0.00       2.40 r
+  final_result_r_reg[14]/D (DFFX1_HVT)                    0.00       2.40 r
+  data arrival time                                                  2.40
+
+  clock CLK (rise edge)                                   2.44       2.44
+  clock network delay (ideal)                             0.00       2.44
+  final_result_r_reg[14]/CLK (DFFX1_HVT)                  0.00       2.44 r
+  library setup time                                     -0.10       2.34
+  data required time                                                 2.34
+  --------------------------------------------------------------------------
+  data required time                                                 2.34
+  data arrival time                                                 -2.40
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.05
+
+
+1
